@@ -7,8 +7,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "secp256k1",
-            targets: ["secp256k1"]),
+            name: "secp256k1bis",
+            targets: ["secp256k1bis"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -57,7 +57,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "secp256k1",
+            name: "secp256k1bis",
             dependencies: ["libsecp256k1"],
             path: "./secp256k1/Classes/exporter",
             sources: ["."])
