@@ -18,7 +18,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "libsecp256k1",
+            name: "libsecp256k1bis",
             path: "./secp256k1/Classes",
             exclude: [
                 "secp256k1/build-aux",
@@ -58,7 +58,7 @@ let package = Package(
         ),
         .target(
             name: "secp256k1bis",
-            dependencies: ["libsecp256k1"],
+            dependencies: ["libsecp256k1bis"],
             path: "./secp256k1/Classes/exporter",
             sources: ["."])
     ]
